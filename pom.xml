@@ -13,16 +13,6 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <aspectj.version>1.9.8.RC3</aspectj.version>
     </properties>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
-        </plugin>
-    </plugins>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -35,7 +25,6 @@
             <artifactId>rest-assured</artifactId>
             <version>5.0.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-all -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
@@ -74,5 +63,16 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
