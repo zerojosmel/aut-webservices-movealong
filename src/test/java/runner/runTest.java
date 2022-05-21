@@ -15,6 +15,7 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
         features = "src/test/resources/cucumber"
         ,glue={"StepDefinition"}
+        ,tags ="@ConsultaConsolidado"
 )
 
 public class runTest {
